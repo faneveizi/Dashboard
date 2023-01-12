@@ -75,7 +75,6 @@ const Product = ({
         }}
       >
         <CardContent>
-          <Typography>id: {_id}</Typography>
           <Typography>Supple left: {supply}</Typography>
           <Typography>
             Yearly sales this year: {stat[0].yearlySalesTotal}
@@ -120,7 +119,6 @@ const Products = () => {
             }) => (
               <Product
                 key={_id}
-                _id={_id}
                 name={name}
                 description={description}
                 price={price}
